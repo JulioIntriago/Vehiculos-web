@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ece9e6;
+    background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+    background: linear-gradient(to right, #ffffff, #ece9e6);
+    height: 100vh;
+    display: flex;
+    place-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+.mobile_container {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 2px;
+    overflow: scroll;
+    box-shadow: 0 0 10px 2px #2c21211a;
+    ;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+header .formulary {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color: rgb(64, 27, 77);
+    font-size: 1.5rem;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.fav_container {
+    padding: 0.25rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fav_meals {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.fav_meals li {
+    margin: 5px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.fav_meals li img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 15px 0.5px black;
+    border-radius: 50%;
+}
+
+.meal_header img {
+    object-fit: cover;
+    height: 250px;
+    object-fit: cover;
+}
+
+.meal_body {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 1rem;
+}
+
+.meal_body h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.meal_body .fav_btn {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(197, 188, 188);
+    font-size: 1rem;
+}
+
+.meal_body .fav_btn.active {
+    color: rebeccapurple;
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.popup-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 2rem;
+    position: relative;
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 600px;
+    width: 100%;
+}
+
+.popup .close-popup {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.meal-info h1 {
+    text-align: center;
+}
+
+.update_info {
+    padding: 10px 50px;
+    margin: 10px 0;
+}
